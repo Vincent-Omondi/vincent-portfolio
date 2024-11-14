@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Framer Motion. Features a clean design with smooth animations and dark/light theme support.
+Oh, the joy of learning frontend! From my first JavaScript syntax error to TypeScript type confusion, this portfolio is my humble attempt at mastering the madness of modern frontend technologies. Check out my masterpiece here: [Vincent Omondi's Portfolio](https://vincentomondi.vercel.app/) – it’s a work in progress, just like me.
 
 ## 🌟 Features
 
@@ -26,13 +26,13 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Frame
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Vincent-Omondi/vincent-portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Set up environment variables**
@@ -48,12 +48,16 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Frame
 
 4. **Run the development server**
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 5. **Build for production**
    ```bash
-   npm run build
+   pnpm run build
+   ```
+6. ** You van preview how the website will look like in production by running
+   ```bash
+   pnpm run start
    ```
 
 ## 📁 Project Structure
@@ -103,6 +107,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [vincentomondi1002@gmail.com](mailto:vincentomondi1002@gmail.com)
+Vincent Omondi - [vincentomondi1002@gmail.com](mailto:vincentomondi1002@gmail.com)
 
-Project Link: [https://github.com/Vincent-Omondi/portfolio](https://github.com/Vincent-Omondi/portfolio)
+Project Link: [https://github.com/Vincent-Omondi/vincent-portfolio](https://github.com/Vincent-Omondi/vincent-portfolio )
