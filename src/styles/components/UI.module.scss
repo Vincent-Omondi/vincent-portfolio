@@ -1,0 +1,15 @@
+.importantText {
+  color: var(--secondary);
+}
+.normalText {
+  color: var(--tertiary);
+}
+.lightText {
+  color: var(--tertiary-dark);
+}
+.boldText {
+  color: var(--tertiary);
+  font-size: 3.2rem;
+  font-weight: var(--bold);
+  letter-spacing: 0.5px;
+}
