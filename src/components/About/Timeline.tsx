@@ -12,7 +12,7 @@ const timelineData = [
     title: "Business Development Associate",
     company: "Sand Technologies",
     period: "Aug 2023 - Dec 2023",
-    description: "Developed web applications and managed various databases."
+    description: "Analyzed and interpreted data to improve business performance."
   }
 ];
 

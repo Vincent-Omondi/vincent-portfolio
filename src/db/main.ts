@@ -69,14 +69,14 @@ export const SkillsData = {
           items: [
             { name: "Go", icon: "devicon:go" },
             { name: "Python", icon: "logos:python" },
-            { name: "Ruby", icon: "logos:ruby" },
+            // { name: "Ruby", icon: "logos:ruby" },
           ]
         },
         {
           category: "Frameworks",
           items: [
             { name: "Django", icon: "logos:django-icon" },
-            { name: "Rails", icon: "devicon:rails" },
+            // { name: "Rails", icon: "devicon:rails" },
           ]
         },
         {
@@ -85,12 +85,12 @@ export const SkillsData = {
             { name: "MySQL", icon: "logos:mysql" },
           ]
         },
-        {
-          category: "APIs",
-          items: [
-            { name: "REST", icon: "simple-icons:fastapi" },
-          ]
-        }
+        // {
+        //   category: "APIs",
+        //   items: [
+        //     { name: "REST", icon: "simple-icons:fastapi" },
+        //   ]
+        // }
       ]
     },
     {
@@ -100,14 +100,14 @@ export const SkillsData = {
           category: "Languages",
           items: [
             { name: "JavaScript", icon: "logos:javascript" },
-            { name: "TypeScript", icon: "logos:typescript-icon" },
+            // { name: "TypeScript", icon: "logos:typescript-icon" },
             { name: "HTML", icon: "logos:html-5" },
           ]
         },
         {
           category: "Frameworks/Libraries",
           items: [
-            { name: "React", icon: "logos:react" },
+            // { name: "React", icon: "logos:react" },
             { name: "Next", icon: "logos:nextjs-icon" },
           ]
         },
@@ -118,12 +118,12 @@ export const SkillsData = {
             { name: "SCSS", icon: "logos:sass" },
           ]
         },
-        {
-          category: "Build Tools",
-          items: [
-            { name: "Webpack", icon: "logos:webpack" },
-          ]
-        }
+        // {
+        //   category: "Build Tools",
+        //   items: [
+        //     { name: "Webpack", icon: "logos:webpack" },
+        //   ]
+        // }
       ]
     },
     {
@@ -134,7 +134,7 @@ export const SkillsData = {
           items: [
             { name: "Git", icon: "logos:git-icon" },
             { name: "GitHub", icon: "logos:github-icon" },
-            { name: "GitLab", icon: "logos:gitlab" },
+            // { name: "GitLab", icon: "logos:gitlab" },
           ]
         },
         {
@@ -149,12 +149,12 @@ export const SkillsData = {
             { name: "Docker", icon: "logos:docker-icon" },
           ]
         },
-        {
-          category: "Cloud",
-          items: [
-            { name: "AWS", icon: "logos:aws" },
-          ]
-        }
+        // {
+        //   category: "Cloud",
+        //   items: [
+        //     { name: "AWS", icon: "logos:aws" },
+        //   ]
+        // }
       ]
     }
   ]
@@ -205,7 +205,7 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
       image: projectAfyachainImage,
       technologies: [
         "Go",
-        "Solidity",
+        // "Solidity",
         "HTML",
         "CSS",
         "Javascript",
