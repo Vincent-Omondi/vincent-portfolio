@@ -6,7 +6,7 @@ const timelineData = [
     title: "Software Development Apprentice",
     company: "Zone01 Kisumu",
     period: "Apr 2024 - Present",
-    description: "Full-stack development with Go, JavaScript, and modern web technologies."
+    description: "Full-stack development with Go, Rust, JavaScript, and modern web technologies."
   },
   {
     title: "Business Development Associate",
