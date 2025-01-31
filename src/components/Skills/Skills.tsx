@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { SkillsData } from "@/db/main";
 import { Icon } from "@iconify/react";
 import { Variants, motion, AnimatePresence } from "framer-motion";
@@ -36,24 +37,42 @@ const itemVariants: Variants = {
 };
 
 // Memoized skill item component to prevent unnecessary re-renders
-const SkillItem = memo(({ skill }: { skill: { name: string; icon: string } }) => (
-  <motion.div
-    className={styles.skill_item}
-    variants={itemVariants}
-    whileHover={{ 
-      scale: 1.03,
-      transition: { duration: 0.2 }
-    }}
-  >
-    <Icon 
-      icon={skill.icon} 
-      className={styles.skill_icon} 
-    />
-    <span className={styles.skill_name}>
-      {skill.name}
-    </span>
-  </motion.div>
-));
+const SkillItem = memo(({ skill }: { skill: { name: string; icon: string } }) => {
+  const isLocalIcon = skill.icon.startsWith('/'); 
+
+  return (
+    <motion.div
+      className={styles.skill_item}
+      variants={itemVariants}
+      whileHover={{ 
+        scale: 1.03,
+        transition: { duration: 0.2 }
+      }}
+    >
+      {isLocalIcon ? (
+        // Use Next.js Image component for local icons
+        <div className={styles.skill_icon}>
+          <Image 
+            src={skill.icon} 
+            alt={skill.name} 
+            width={24} 
+            height={24} 
+          />
+        </div>
+      ) : (
+        // Use Iconify for external icons
+        <Icon 
+          icon={skill.icon} 
+          className={styles.skill_icon} 
+        />
+      )}
+      <span className={styles.skill_name}>
+        {skill.name}
+      </span>
+    </motion.div>
+  );
+});
+
 
 SkillItem.displayName = 'SkillItem';
 

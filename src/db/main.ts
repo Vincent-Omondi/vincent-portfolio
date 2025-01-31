@@ -1,5 +1,7 @@
 import projectGroupieImage from "../../public/images/groupie.png";
 import projectAfyachainImage from "../../public/images/afyachain.png";
+import projectKintaraaImage from "../../public/images/kintaraa.png";
+import projectHealthnetaiImage from "../../public/images/healthnetai.png";
 import { StaticImageData } from 'next/image';
 
 // Define type interfaces for better type safety and documentation
@@ -67,9 +69,9 @@ export const SkillsData = {
         {
           category: "Languages",
           items: [
+            { name: "Motoko", icon: "/images/motoko.svg" },
             { name: "Go", icon: "devicon:go" },
-            { name: "Python", icon: "logos:python" },
-            // { name: "Ruby", icon: "logos:ruby" },
+            { name: "Rust", icon: "simple-icons:rust" },
           ]
         },
         {
@@ -100,15 +102,15 @@ export const SkillsData = {
           category: "Languages",
           items: [
             { name: "JavaScript", icon: "logos:javascript" },
-            // { name: "TypeScript", icon: "logos:typescript-icon" },
-            { name: "HTML", icon: "logos:html-5" },
+            { name: "TypeScript", icon: "logos:typescript-icon" },
+            // { name: "HTML", icon: "logos:html-5" },
           ]
         },
         {
           category: "Frameworks/Libraries",
           items: [
             // { name: "React", icon: "logos:react" },
-            { name: "Next", icon: "logos:nextjs-icon" },
+            { name: "Next", icon: "simple-icons:nextdotjs" },
           ]
         },
         {
@@ -133,7 +135,7 @@ export const SkillsData = {
           category: "Version Control",
           items: [
             { name: "Git", icon: "logos:git-icon" },
-            { name: "GitHub", icon: "logos:github-icon" },
+            { name: "GitHub", icon: "simple-icons:github" },
             // { name: "GitLab", icon: "logos:gitlab" },
           ]
         },
@@ -165,15 +167,15 @@ export const contactData = {
   cards: [
     {
       title: "Offer a job opportunity?",
-      text: "Let’s cut to the chase: I build clean code and bring ideas to life on the web. If you’re looking for a developer ready to tackle exciting, brain-twisting projects, let's connect and see if we’re a match. I’m all ears—well, pixels.",
+      text: "Let's cut to the chase: I build clean code and bring ideas to life on the web. If you're looking for a developer ready to tackle exciting, brain-twisting projects, let's connect and see if we're a match. I'm all ears—well, pixels.",
     },
     {
       title: "Connect over cubes?",
-      text: "Networking’s like solving a complex Rubik’s Cube—sometimes frustrating, but always worth it when it clicks! If you’re in the dev world (or share a love for puzzles and board games), reach out. Let's chat, connect, and see if we can turn a few gears together.",
+      text: "Networking's like solving a complex Rubik's Cube—sometimes frustrating, but always worth it when it clicks! If you're in the dev world (or share a love for puzzles and board games), reach out. Let's chat, connect, and see if we can turn a few gears together.",
     },
     {
       title: "Build something cool?",
-      text: "If you have a bold vision for the next big web app or platform, I’m game. From sleek UIs to seamless functionality, I’m all about creating something that both works and wows. Let's team up and build something worth bragging about!",
+      text: "If you have a bold vision for the next big web app or platform, I'm game. From sleek UIs to seamless functionality, I'm all about creating something that both works and wows. Let's team up and build something worth bragging about!",
     },
   ],
   links: [
@@ -201,19 +203,44 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
   title: "Projects",
   Projects: [
     {
+      name: "Kintaraa",
+      image: projectKintaraaImage,
+      technologies: [
+        "Rust",
+        "React",
+      ],
+      description:
+        "Kintaraa is a blockchain-powered platform that empowers victims of gender-based violence by enabling secure, anonymous reporting and providing holistic support through medical, legal, and psychological services.",
+      demoUrl: "",
+      codeUrl: "https://github.com/Kintaraa/kintaraa.git",
+    },
+    {
       name: "AfyaChain",
       image: projectAfyachainImage,
       technologies: [
         "Go",
-        // "Solidity",
         "HTML",
         "CSS",
         "Javascript",
       ],
       description:
         "AfyaChain is a blockchain-based Electronic Medical Record (EMR) and Health Management Information System (HMIS) designed to address the critical inefficiencies in Kenya's healthcare system.",
-      demoUrl: "https://afyachain.co.ke",
+      demoUrl: "https://afyachain.co.ke/",
       codeUrl: "",
+    },
+    {
+      name: "HealthNET AI",
+      image: projectHealthnetaiImage,
+      technologies: [
+        "Go",
+        "React",
+        "DeepSeek AI",
+
+      ],
+      description:
+        "HealthNET AI is an innovative platform leveraging AI and decentralized technology to provide reliable network connectivity, enhance healthcare efficiency, and ensure data security for underserved health clinics",
+        demoUrl: "https://healthnetai.vercel.app/",
+        codeUrl: "https://github.com/Evarest-ke/healthnetai.git",
     },
     {
       name: "Groupie Tracker",
@@ -231,4 +258,3 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
     },
   ],
 };
-
