@@ -219,10 +219,8 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
       name: "AfyaChain",
       image: projectAfyachainImage,
       technologies: [
-        "Go",
-        "HTML",
-        "CSS",
-        "Javascript",
+        "Rust",
+        "React",
       ],
       description:
         "AfyaChain is a blockchain-based Electronic Medical Record (EMR) and Health Management Information System (HMIS) designed to address the critical inefficiencies in Kenya's healthcare system.",
