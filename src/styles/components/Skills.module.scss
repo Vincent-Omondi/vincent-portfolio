@@ -23,6 +23,8 @@
     padding: 3rem;
     border: 1px solid rgba(0, 186, 183, 0.411);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 
     @media screen and (max-width: 800px) {
       padding: 2rem 1rem;
@@ -34,13 +36,9 @@
     gap: 1.5rem;
     border-bottom: 1px solid rgba(0, 186, 183, 0.2);
     padding: 0 1rem 2rem 1rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
     width: 100%;
     position: relative;
-    z-index: 2;
+    isolation: isolate;
     
     &::-webkit-scrollbar {
       display: none;
@@ -49,6 +47,10 @@
     @media screen and (max-width: 800px) {
       padding: 0 1rem 1.5rem 1rem;
       gap: 1rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
     }
   }
 
@@ -61,11 +63,14 @@
     cursor: pointer;
     border-radius: 0.8rem;
     transition: all 0.3s ease;
-    flex: 0 0 auto;
+    position: relative;
+    isolation: isolate;
+    flex-shrink: 0;
     white-space: nowrap;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    pointer-events: auto;
     
     &:hover {
       background: rgba(0, 186, 183, 0.1);
@@ -91,7 +96,6 @@
     flex-direction: column;
     gap: 4rem;
     padding: 0 1rem;
-    z-index: 1;
   }
 }
 
