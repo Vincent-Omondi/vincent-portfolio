@@ -53,7 +53,7 @@ const Footer: React.FC<FooterProps> = () => {
         </Link>
       </div>
       <div className={`${styles.footer_textContainer}`}>
-        <p>© 2024 Vincent Omondi</p>
+        <p>© 2025 Vincent Omondi</p>
       </div>
     </div>
   );
