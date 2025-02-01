@@ -41,7 +41,6 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    touch-action: pan-x;
     
     &::-webkit-scrollbar {
       display: none;
@@ -50,7 +49,6 @@
     @media screen and (max-width: 800px) {
       padding: 0 1rem 1.5rem 1rem;
       gap: 1rem;
-      pointer-events: auto;
     }
   }
 
@@ -146,6 +144,21 @@
 .skill_icon {
   width: 2.4rem;
   height: 2.4rem;
+  object-fit: contain;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
 }
 
 .skill_name {
