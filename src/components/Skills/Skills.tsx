@@ -85,6 +85,10 @@ const Skills: React.FC = () => {
     [activeCategory]
   );
 
+  const handleTabClick = (category: string) => {
+    setActiveCategory(category);
+  };
+
   return (
     <div className={styles.skills} id="skills">
       <motion.h2 
@@ -100,49 +104,41 @@ const Skills: React.FC = () => {
       <div className={styles.skills_container}>
         <div className={styles.skills_tabs}>
           {SkillsData.categories.map((category) => (
-            <motion.button
+            <button
               key={category.title}
               className={`${styles.skills_tab} ${
                 activeCategory === category.title ? styles.active : ""
               }`}
-              onClick={() => setActiveCategory(category.title)}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              onClick={() => handleTabClick(category.title)}
               aria-selected={activeCategory === category.title}
               role="tab"
+              type="button"
             >
               {category.title}
-            </motion.button>
+            </button>
           ))}
         </div>
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeCategory}
-            className={styles.skills_content}
-            initial="initial"
-            animate="animate"
-            exit="initial"
-            variants={containerVariants}
-          >
-            {activeSkills.map((skillGroup) => (
-              <motion.div 
-                key={skillGroup.category} 
-                className={styles.skill_group}
-                variants={containerVariants}
-              >
-                <h4 className={styles.skill_group_title}>
-                  {skillGroup.category}
-                </h4>
-                <div className={styles.skill_items}>
-                  {skillGroup.items.map((skill) => (
-                    <SkillItem key={skill.name} skill={skill} />
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+        <div className={styles.skills_content}>
+          {activeSkills.map((skillGroup) => (
+            <motion.div 
+              key={skillGroup.category} 
+              className={styles.skill_group}
+              variants={containerVariants}
+              initial="initial"
+              animate="animate"
+            >
+              <h4 className={styles.skill_group_title}>
+                {skillGroup.category}
+              </h4>
+              <div className={styles.skill_items}>
+                {skillGroup.items.map((skill) => (
+                  <SkillItem key={skill.name} skill={skill} />
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );
