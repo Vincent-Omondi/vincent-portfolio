@@ -46,7 +46,7 @@ export const heroData: HeroData = {
   title: "Hi, I'm Vincent Omondi",
   subtitle: "Full Stack Developer",
   description: [
-    "From start to finish, I handle the complete development, deployment, and maintenance of your website.",
+    "From start to finish, I handle the complete development, deployment, and maintenance of your dApp.",
     "Want to know more?"
   ],
   btnText: "See My Projects",
@@ -55,8 +55,8 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   title: "About Me",
   content: [
-    "I'm a passionate Full Stack Developer with expertise in building scalable web applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create seamless user experiences.",
-    "Currently as a Software Development Apprentice at Zone01 Kisumu, my journey in software development has equipped me with a deep understanding of modern web technologies and best practices. I'm always eager to learn new technologies and take on challenging projects."
+    "I'm a Full Stack Developer specializing in blockchain technology, building secure, scalable, and user-friendly decentralized applications. My expertise covers the entire development lifecycle, from concept to deployment and maintenance.",
+    "As a Software Development Apprentice at Zone01 Kisumu, I’ve advanced my skills in modern web and blockchain technologies, solving complex challenges to deliver innovative solutions. I’m passionate about continuous learning and exploring new tools to push the boundaries of decentralized systems."
   ]
 };
 
@@ -84,7 +84,8 @@ export const SkillsData = {
         {
           category: "Database Management",
           items: [
-            { name: "MySQL", icon: "logos:mysql" },
+            // { name: "MySQL", icon: "logos:mysql" },
+            { name: "Canister Storage", icon: "mdi:database" }, // Example icon
           ]
         },
         // {
@@ -211,7 +212,7 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
       ],
       description:
         "Kintaraa is a blockchain-powered platform that empowers victims of gender-based violence by enabling secure, anonymous reporting and providing holistic support through medical, legal, and psychological services.",
-      demoUrl: "",
+      demoUrl: "https://24dyw-2yaaa-aaaam-adxmq-cai.icp0.io/",
       codeUrl: "https://github.com/Kintaraa/kintaraa.git",
     },
     {
@@ -242,19 +243,19 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
         demoUrl: "https://healthnetai.vercel.app/",
         codeUrl: "https://github.com/Evarest-ke/healthnetai.git",
     },
-    {
-      name: "Groupie Tracker",
-      image: projectGroupieImage,
-      technologies: [
-        "Go",
-        "Javascript",
-        "HTML",
-        "CSS",
-        "Dockerfile",
-      ],
-      description:
-        "Consists of receiving a given API and manipulating the data contained in it to create a site and display the information about music artists, their concert locations, and related dates.",
-      codeUrl: "https://github.com/Vincent-Omondi/groupie-tracker.git",
-    },
+    // {
+    //   name: "Groupie Tracker",
+    //   image: projectGroupieImage,
+    //   technologies: [
+    //     "Go",
+    //     "Javascript",
+    //     "HTML",
+    //     "CSS",
+    //     "Dockerfile",
+    //   ],
+    //   description:
+    //     "Consists of receiving a given API and manipulating the data contained in it to create a site and display the information about music artists, their concert locations, and related dates.",
+    //   codeUrl: "https://github.com/Vincent-Omondi/groupie-tracker.git",
+    // },
   ],
 };
