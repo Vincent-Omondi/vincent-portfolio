@@ -46,7 +46,7 @@ export const heroData: HeroData = {
   title: "Hi, I'm Vincent Omondi",
   subtitle: "Full Stack Developer",
   description: [
-    "From start to finish, I handle the complete development, deployment, and maintenance of your dApp.",
+    "From start to finish, I handle the complete development, deployment, and maintenance of your dApps.",
     "Want to know more?"
   ],
   btnText: "See My Projects",
@@ -70,8 +70,8 @@ export const SkillsData = {
           category: "Languages",
           items: [
             { name: "Motoko", icon: "/images/motoko.svg" },
-            { name: "Go", icon: "devicon:go" },
             { name: "Rust", icon: "simple-icons:rust" },
+            { name: "Go", icon: "devicon:go" },
           ]
         },
         {
@@ -110,8 +110,8 @@ export const SkillsData = {
         {
           category: "Frameworks/Libraries",
           items: [
-            // { name: "React", icon: "logos:react" },
-            { name: "Next", icon: "simple-icons:nextdotjs" },
+            { name: "React", icon: "logos:react" },
+            // { name: "Next", icon: "simple-icons:nextdotjs" },
           ]
         },
         {
@@ -149,7 +149,10 @@ export const SkillsData = {
         {
           category: "CI/CD",
           items: [
-            { name: "Docker", icon: "logos:docker-icon" },
+            // { name: "Docker", icon: "logos:docker-icon" },
+            // { name: "Kubernetes", icon: "logos:kubernetes" },
+            { name: "DFX", icon: "logos:dfx" },
+            { name: "GitHub Actions", icon: "logos:github-actions" },
           ]
         },
         // {
