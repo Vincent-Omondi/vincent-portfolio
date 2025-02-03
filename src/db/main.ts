@@ -69,9 +69,10 @@ export const SkillsData = {
         {
           category: "Languages",
           items: [
-            { name: "Motoko", icon: "/images/motoko.svg" },
-            { name: "Rust", icon: "simple-icons:rust" },
             { name: "Go", icon: "devicon:go" },
+            { name: "Python", icon: "logos:python" },
+            { name: "Rust", icon: "simple-icons:rust" },
+            { name: "Motoko", icon: "/images/motoko.svg" },
           ]
         },
         {
