@@ -46,7 +46,7 @@ export const heroData: HeroData = {
   title: "Hi, I'm Vincent Omondi",
   subtitle: "Full Stack Developer",
   description: [
-    "From start to finish, I handle the complete development, deployment, and maintenance of your dApps.",
+    "From start to finish, I handle the complete development, deployment, and maintenance of your (d)Apps.",
     "Want to know more?"
   ],
   btnText: "See My Projects",
@@ -55,8 +55,8 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   title: "About Me",
   content: [
-    "I'm a Full Stack Developer specializing in blockchain technology, building secure, scalable, and user-friendly decentralized applications. My expertise covers the entire development lifecycle, from concept to deployment and maintenance.",
-    "As a Software Development Apprentice at Zone01 Kisumu, I’ve advanced my skills in modern web and blockchain technologies, solving complex challenges to deliver innovative solutions. I’m passionate about continuous learning and exploring new tools to push the boundaries of decentralized systems."
+    "I'm a Full Stack Developer focused on building secure, scalable, and user-friendly applications. My expertise spans the entire development lifecycle, from concept to deployment and maintenance, with a strong focus on AI-powered solutions and modern app architecture.",
+    "As a  Full-Stack Software Developer at Zone01 Kisumu, I’ve deepened my skills in modern web technologies, intelligent systems, and distributed app design, solving complex challenges to deliver innovative, real-world solutions. I’m committed to continuous learning and exploring emerging tools that push the boundaries of what intelligent, decentralized apps can do."
   ]
 };
 
@@ -79,14 +79,18 @@ export const SkillsData = {
           category: "Frameworks",
           items: [
             { name: "Django", icon: "logos:django-icon" },
+            { name: "NiceGUI (Library)", icon: "mdi:robot" },
             // { name: "Rails", icon: "devicon:rails" },
           ]
         },
         {
           category: "Database Management",
           items: [
-            // { name: "MySQL", icon: "logos:mysql" },
-            { name: "Canister Storage", icon: "mdi:database" }, // Example icon
+            { name: "MySQL", icon: "logos:mysql" },
+            { name: "PostgreSQL", icon: "logos:postgresql" },
+            { name: "SQLite", icon: "vscode-icons:file-type-sqlite" },
+            { name: "MongoDB", icon: "devicon:mongodb" },
+            { name: "Canister Storage", icon: "mdi:database" } // Example icon
           ]
         },
         // {
@@ -112,7 +116,7 @@ export const SkillsData = {
           category: "Frameworks/Libraries",
           items: [
             { name: "React", icon: "logos:react" },
-            // { name: "Next", icon: "simple-icons:nextdotjs" },
+            { name: "Next", icon: "simple-icons:nextdotjs" },
           ]
         },
         {
@@ -145,15 +149,17 @@ export const SkillsData = {
           category: "Testing",
           items: [
             { name: "Jest", icon: "logos:jest" },
+            { name: "Pytest", icon: "vscode-icons:file-type-pytest" },
           ]
         },
         {
           category: "CI/CD",
           items: [
-            // { name: "Docker", icon: "logos:docker-icon" },
-            // { name: "Kubernetes", icon: "logos:kubernetes" },
+            { name: "Docker", icon: "logos:docker-icon" },
+            { name: "Kubernetes", icon: "logos:kubernetes" },
             { name: "DFX", icon: "logos:dfx" },
             { name: "GitHub Actions", icon: "logos:github-actions" },
+            { name: "AWS", icon: "logos:aws" },
           ]
         },
         // {
@@ -241,7 +247,7 @@ export const ProjectsData: { title: string; Projects: Project[] } = {
 
       ],
       description:
-        "HealthNET AI is an innovative platform leveraging AI and decentralized technology to provide reliable network connectivity, enhance healthcare efficiency, and ensure data security for underserved health clinics",
+        "HealthNET AI is an innovative platform leveraging AI to provide reliable network connectivity, enhance healthcare efficiency, and ensure data security for underserved health clinics",
         demoUrl: "https://healthnetai.vercel.app/",
         codeUrl: "https://github.com/Evarest-ke/healthnetai.git",
     },
