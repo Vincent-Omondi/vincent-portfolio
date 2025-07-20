@@ -3,7 +3,13 @@ import styles from "../../styles/components/Timeline.module.scss";
 
 const timelineData = [
   {
-    title: "Software Development Apprentice",
+    title: "Full-Stack Developer (Algorithm Engineer & Project Manager)",
+    company: "Berrijam AI",
+    period: "May 2025 - Present",
+    description: "I design and lead full-stack AI solutions at Berrijam, driving intuitive interfaces, fast decision algorithms, and secure offline tools to make data insights 60x faster for non-technical users."
+  },
+  {
+    title: "Full-Stack Software Developer",
     company: "Zone01 Kisumu",
     period: "Apr 2024 - Present",
     description: "Full-stack development with Go, Rust, JavaScript, and modern web technologies."
@@ -20,7 +26,7 @@ const Timeline = () => {
   return (
     <div className={styles.timeline}>
       {timelineData.map((item, index) => (
-        <motion.div 
+        <motion.div
           key={index}
           className={styles.timeline_item}
           initial={{ opacity: 0, y: 20 }}
@@ -41,4 +47,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline; 
+export default Timeline;
